@@ -1,0 +1,19 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n, k, a;
+	bool c = true;
+	cin >> k >> n;
+
+	for (int i = 0; i < n; i++)
+	{
+		cin >> a;
+		if (a >= k) c = false;
+	}
+	if (c == false) cout << "False" << endl;
+	else cout << "True" << endl;
+	system("pause");
+}
