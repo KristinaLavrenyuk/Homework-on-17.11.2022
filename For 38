@@ -1,0 +1,22 @@
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    double n, slag, sum = 0;
+    cin >> n;
+
+    for (int i = 1; i <= n; i++)
+    {
+        slag = i;
+        for (int j = n; (j - i) > 0; j--)
+        {
+            slag *= i;
+        }
+        sum += slag;
+    }
+    cout << fixed << setprecision(2) << sum << endl;
+    system("pause");
+}
