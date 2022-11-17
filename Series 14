@@ -1,0 +1,18 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int k, i = 0, a;
+    cin >> k;
+
+    while (true)
+    {
+        cin >> a;
+        if (a == 0) break;
+        if (a < k) i++;
+    }
+    cout << i << endl;
+    system("pause");
+}
